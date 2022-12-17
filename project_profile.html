@@ -1,0 +1,239 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <link rel="icon" type="image/png" href="./img/approved-profile.png"/>
+                                <title>Project Của Tôi</title>
+                                <link href="./style_list.css" rel="stylesheet" id="bootstrap-css">
+                                <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <style>::-webkit-scrollbar {
+                                  width: 8px;
+                                }
+                                /* Track */
+                                ::-webkit-scrollbar-track {
+                                  background: #f1f1f1; 
+                                }
+                                 
+                                /* Handle */
+                                ::-webkit-scrollbar-thumb {
+                                  background: #888; 
+                                }
+                                
+                                /* Handle on hover */
+                                ::-webkit-scrollbar-thumb:hover {
+                                  background: #555; 
+                                } body{
+    background:#eee;
+}
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#8E24AA;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:#8E24AA;
+    font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #8E24AA !important;
+       color:#8E24AA;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #8E24AA !important;
+       color:#fff;
+       height:40px;
+       background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA;
+       color:#fff;
+        height:40px;
+}
+#insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.project_info:hover{
+color: #8E24AA;
+}
+
+.text-small{
+    font-size: 14px;
+}
+</style>
+                                </head>
+                                <body className='snippet-body'>
+                                <div class="container mt-5">
+    
+    <div class="row d-flex justify-content-center">
+        
+        <div class="col-md-7">
+            
+            <div class="card p-3 py-4">
+                <a href="./index.html" style="font-size: 20px; color:#000;"><i class="fa-solid fa-arrow-left"></i></a>
+                <div class="text-center">
+                    <img src="./img/profile_avt.jpg" width="100" class="rounded-circle">
+                </div>
+                
+                <div class="text-center mt-3">
+                    
+                    <h5 class="mt-2 mb-0">Nguyễn Tiến Dũng <span><i class="fas fa-check-circle"></i></span></h5>
+                    <span>Fullstack Developer</span>
+                    
+                    <div class="px-4 mt-1">
+                        <div class="buttons" style="margin-top: 30px;">
+                        
+                            <h3 class="btn btn-outline-primary px-4">My Project</h3>
+                        </div>
+                    <hr>
+                    </div>
+
+                     <div class="container">
+                        <div class="row">
+                            <a href="https://github.com/nguyenung04062001/WebBanSua_Asp.NetCoreMvc" style="color: #000; text-decoration: none;"><div class="[ col-xs-12 col-sm-offset-2 col-sm-12 ]">
+                                <ul class="event-list">
+                                    <li>
+                                        <img alt="Independence Day" src="./img/Picture1.png" />
+                                        <div class="info">
+                                            <h2 class="title">Web Bán Sữa - Nước Giải Khát</h2>
+                                            <div class="desc">
+                                                <span class="text-small">Thời gian: 04/2022</span> <br>
+                                                <span class="text-small">Ngôn ngữ: Html - Css - Javascript - C# - Frame work Asp .Net Core</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div></a>
+
+                            <a href="https://github.com/nguyenung04062001/QuanLyKS-Winform" style="color: #000; text-decoration: none;"><div class="[ col-xs-12 col-sm-offset-2 col-sm-12 ]">
+                                <ul class="event-list">
+                                    <li>
+                                        <img alt="Independence Day" src="./img/qlks.jpg" />
+                                        <div class="info">
+                                            <h2 class="title">Phần Mềm Quản Lý Khách Sạn - Winform</h2>
+                                            <div class="desc">
+                                                <span class="text-small">Thời gian: 11/2021</span> <br>
+                                                <span class="text-small">C# - Winform App, .Net, SQL Server</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div></a>
+
+                            <a href="#" style="color: #000; text-decoration: none;"><div class="[ col-xs-12 col-sm-offset-2 col-sm-12 ]">
+                                <ul class="event-list">
+                                    <li>
+                                        <img alt="Independence Day" src="./img/webgv.jpg" />
+                                        <div class="info">
+                                            <h2 class="title">Website Tìm Giúp Việc Nhà</h2>
+                                            <div class="desc">
+                                                <span class="text-small">Thời gian: 12/2022</span> <br>
+                                                <span class="text-small">Frontend: HTML & CSS, JAVASCRIPT, VueJs</span><br>
+                                                <span class="text-small">Backend: SQL Server, C#,  Asp .Net Core API</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div></a>
+
+                            <a href="https://nguyenung04062001.github.io/webbandienthoai/" style="color: #000; text-decoration: none;"><div class="[ col-xs-12 col-sm-offset-2 col-sm-12 ]">
+                                <ul class="event-list">
+                                    <li>
+                                        <img alt="Independence Day" src="./img/bandt.jpg" />
+                                        <div class="info">
+                                            <h2 class="title">Web Bán Điện Thoại - Laptop</h2>
+                                            <div class="desc">
+                                                <span class="text-small">Thời gian: 06/2021</span> <br>
+                                                <span class="text-small">Ngôn ngữ: Html - Css - Javascript - JQuery</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div></a>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+               
+                
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+                                myLink.addEventListener('click', function(e) {
+                                  e.preventDefault();
+                                });</script>
+                            
+                                </body>
+                            </html>
